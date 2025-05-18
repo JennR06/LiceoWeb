@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #e50914;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero {
+  background: 
+    linear-gradient(rgba(20,20,20,0.7), rgba(20,20,20,0.7)),
+    url(https://cdn.eldestapeweb.com/eldestape/042021/1617290155151/netflix_catalogo_de_series_y_peliculas.webp?cw=400&ch=225&extw=jpg) 
+    no-repeat center center/cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  border-bottom: 4px solid #e50914;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview, .news, .filtros {
+  padding: 2rem;
+}
+
+.preview .grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.3s;
+
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 2px solid #e50914;
+  
+}
+
+.card p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.news p {
+  margin-top: 0.5rem;
+}
+
+.filtros button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filtros button:hover {
+  background-color: #ff1e1e;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  font-size: 0.9rem;
+}

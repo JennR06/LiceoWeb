@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #77b2ed; 
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.galeria {
+    width: 100%;
+    max-width: 100%;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    padding: 70px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Botones flecha */
+.pre,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+}
+.pre:hover, 
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pre {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+/* puntos indicadores */
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dot.active {
+    background-color: #333;
+}
+.nav-bar {
+    background-color: #7db2e8; 
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    margin: 0 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #887ff1; 
+    transform: scale(1.1); 
+}

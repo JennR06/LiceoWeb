@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+nav {
+    background: #f67d7d;
+    padding: 6px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax1 { background-image: url(https://concepto.de/wp-content/uploads/2013/03/justicia-1-e1552387959897.jpg);}
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.parallax h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.parallax p {
+    font-size: 20px;
+}
+
+
+#servicios, #quienes-somos, #contacto {
+    background: #f58989;
+}
+
+
+footer {
+    background: #ef9b9b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+#btnArriba:hover{
+    background-color: #555;
+}
