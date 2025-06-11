@@ -13,6 +13,14 @@ blockquote {
     color: #555;
 }
 
+hr {
+  border: none;
+  border-top: 2px dashed #cce0f5;
+  margin: 1.5rem 0;
+  width: 60px;
+
+}
+
 .navbar {
     background-color: #cce7ff; 
     padding: 30px 0;
@@ -69,7 +77,7 @@ body {
 }
 
 header {
-  background-color: #a7d0f5; /* azul pastel */
+  background-color: #a7d0f5; 
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
